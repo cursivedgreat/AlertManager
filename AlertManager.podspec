@@ -2,13 +2,13 @@ Pod::Spec.new do |s|
 
 #1
 s.platform     = :ios
-s.ios.deployment_target = "9.0"
+s.swift_version = "4.0"
 s.name         = "AlertManager"
 s.summary      = "Manages Alert or Error Display."
 s.requires_arc = true
 
 #2
-s.version      = "0.0.4"
+s.version      = "0.0.6"
 
 #3
 s.license      = { :type => "MIT", :file => "LICENSE" }
