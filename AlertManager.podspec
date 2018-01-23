@@ -8,7 +8,7 @@ s.summary      = "Manages Alert or Error Display."
 s.requires_arc = true
 
 #2
-s.version      = "0.0.6"
+s.version      = "0.0.7"
 
 #3
 s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -30,7 +30,5 @@ s.source_files  = "AlertManager/**/*.{swift}"
 
 #9
 s.resources = "AlertManager/**/*.{png,jpeg,jpg,storyboard,xib}"
-
-
-s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+s.ios.deployment_target = '9.0'
 end
