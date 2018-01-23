@@ -1,7 +1,5 @@
 Pod::Spec.new do |s|
 
-echo "4.0" > .swift-version
-
 #1
 s.platform     = :ios
 s.ios.deployment_target = "9.0"
@@ -33,4 +31,6 @@ s.source_files  = "AlertManager/**/*.{swift}"
 #9
 s.resources = "AlertManager/**/*.{png,jpeg,jpg,storyboard,xib}"
 
+
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 end
