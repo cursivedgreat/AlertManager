@@ -9,6 +9,17 @@
 import Foundation
 import UIKit
 
+struct Status: Codable {
+    let message: String
+    let code : Int
+}
+
+struct StatusObject: Codable {
+    let status : Status
+}
+
+let VALID_RESPONSE_CODE = 2
+
 @objc class ErrorManager: NSObject {
      static func showError(withTitle title: String?, message aMessage: String?, isCompulsory compulsory: Bool? = false) {
         var displayError = DisplayError()
