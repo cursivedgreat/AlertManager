@@ -50,9 +50,9 @@ class ErrorDisplayController: UIViewController {
         tController.errorList.append(error)
         tController.displayError()
         if error.errorType == .unauthorized {
-            if let tAppDelegate = UIApplication.shared.delegate as? AppDelegate {
-                tAppDelegate.logout()
-            }
+//            if let tAppDelegate = UIApplication.shared.delegate as? AppDelegate {
+//                tAppDelegate.logout()
+//            }
         } 
     }
     
