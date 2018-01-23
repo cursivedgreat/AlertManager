@@ -1,5 +1,7 @@
 Pod::Spec.new do |s|
 
+echo "4.0" > .swift-version
+
 #1
 s.platform     = :ios
 s.ios.deployment_target = "9.0"
@@ -8,7 +10,7 @@ s.summary      = "Manages Alert or Error Display."
 s.requires_arc = true
 
 #2
-s.version      = "0.0.2"
+s.version      = "0.0.3"
 
 #3
 s.license      = { :type => "MIT", :file => "LICENSE" }
