@@ -115,3 +115,8 @@ struct DisplayError {
     var message = ""
     var errorType = DisplayErrorType.discardable
 }
+
+//Replace this error signature with yours.
+struct SuppliedError: Codable {
+    var errors: [String: [String]]?
+}
